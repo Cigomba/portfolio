@@ -1,0 +1,198 @@
+
+/* navbar css */
+#third {
+    /* width: auto !important; */
+    /* display: flex; */
+    /* align-items: end; */
+    /* justify-content: space-between; */
+}
+
+.navbar {
+    margin: 10px auto;
+    font-size: 1.2em;
+    border-bottom: 1px solid #eee;
+}
+
+.navbar * {
+    padding: 10 0px !important;
+    margin: 0 !important;
+}
+
+a {
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+
+.row > div > a:hover {
+    background-color: transparent;
+    /* border-color: white; */
+    color: #333;
+    /* color: white; */
+    /* transition: all 0.3s ease-in-out; */
+    /* text-decoration: underline; */
+}
+
+div > ul {
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    gap: 20px;
+}
+
+ul li a:hover {
+    background-color: #eee;
+    /* border-radius: 10px; */
+    /* color: goldenrod; */
+}   
+
+
+/* introduction css */
+.name-introduction > img {
+    border-radius: 100%;
+    width: 50%;
+    box-shadow:
+    0px 0.5px 2.2px rgba(0, 0, 0, 0.02),
+    0px 1.1px 5.3px rgba(0, 0, 0, 0.028),
+    0px 2.1px 10px rgba(0, 0, 0, 0.035),
+    0px 3.8px 17.9px rgba(0, 0, 0, 0.042),
+    0px 7.1px 33.4px rgba(0, 0, 0, 0.05),
+    0px 17px 80px rgba(0, 0, 0, 0.07)
+  ;
+}
+
+.name-introduction > img:hover {
+    outline: 1px solid goldenrod;
+}
+
+.name-introduction {
+    text-align: center;
+}
+
+.introduction {
+    padding-bottom: 100px !important;
+}
+
+.about-me {
+    margin: 0 auto;
+    text-align: left;
+}
+
+#languages {
+    margin-top: 50px;
+    padding: 10px;
+}
+
+#_icons {
+    /* display: flex; */
+    /* gap: 50px; */
+    padding-left: 40%;
+}
+
+/* contact */
+.contact {
+    color: rgba(150, 131, 23, 0.514);
+}
+.contact:hover{
+    background-color: rgba(97, 85, 16, 0.514);
+    color: white;
+    border: 0;
+    transition: all  0.3s ease-in-out ;
+}
+
+#projects {
+    padding: 10px;
+}
+
+/* knowables css */
+.knowables {
+    padding-top: 50px !important;
+    text-align: left;
+    background-color: rgba(96, 84, 19, 0.514);
+    color: white;
+}
+
+.certificate-image {
+    width: 40%;
+    height: 40%;
+    /* aspect-ratio: initial; */
+    overflow: none;
+}
+
+.minimize_margin {
+    margin-bottom: -10%;
+}
+
+.text-content {
+    text-align: center;
+}
+
+#accomplishments {
+    /* padding: -10px; */
+    padding-top: 50px;
+    /* margin: -10px; */
+}
+
+.modal_content {
+    padding-top: 100px !important;
+}
+
+#modal {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    height: 100vh !important;
+    transition: all 0.3s ease-in-out;
+}
+
+#message {
+    width: 100%;
+    min-height: 10vh;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+#quicklinks {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#quicklinks li {
+    list-style: none;
+    /* border: 1px solid black; */
+}
+
+.submit_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submit_container p {
+    padding-top: 12px;
+}
+
+/* utility css */
+/* .br {
+    border: 1px solid darkgoldenrod;
+  }
+   */
+  .h5 {
+    min-height: 50vh;
+    width: auto;
+  }   
+  
+  .centery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+  
