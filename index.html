@@ -1,236 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
+
+<head>
 	<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0" />
-		<link
-			rel="stylesheet"
-			href="style.css" />
-		<!-- <link rel="icon" href="#" /> -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"
-			integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"></link>
-			<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-			<script src="./scripts/mail.js"></script>
-			<script src="./scripts/index.js"></script>
-		<script src="https://kit.fontawesome.com/bb8d7d04f7.js" crossorigin="anonymous"></script>
-		<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("MzSIdgg5HdqE-3xBi");
-   })();
-</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+	<!-- <link rel="icon" href="#" /> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ=="
+	 crossorigin="anonymous" referrerpolicy="no-referrer"></link>
+	<script src="./scripts/mail.js" defer></script>
+	<script src="./scripts/script.js" defer></script>
+	<script src="https://kit.fontawesome.com/bb8d7d04f7.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+	</script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("MzSIdgg5HdqE-3xBi");
+		})();
+	</script>
 
-		<title>Miler's Site</title>
-	</head>
-	<body>
-		<!-- top navigation -->
-		<div class="container">
-		<div class="row navbar" id="nav">
-			<div class="one-third column">
-				<a href="/">Cigomba.tech</a>
+	<title>Miler's Portfolio</title>
+</head>
+
+<body>
+	<!-- top navigation -->
+	<nav class="container" id="main_nav">
+		<a href="/">Home</a>
+		<a href="pages/about.html">about</a>
+	</nav>
+
+	<!-- main container -->
+	<div class="container introduction">
+		<div class="row intro">
+			<div class="column u-full-width">
+				<h1 id="hello" contenteditable> Hi there! Welcome to my portfolio.</h1>
+				<p>Who am i?</p>
 			</div>
-			<div class="one-third column">&nbsp;</div>
-			<div class="one-third column" id="third">
-			</li>
-
-			<ul>
-					<li>
-						<a href="https://github.com/Cigomba" alt="Github">
-							<i class="fa fa-github"></i>
-						</a>
-					</li>
-		
-					<li>
-						<a href="https://linkedin.com/in/cigomba-miler"> 
-							<i class="fa fa-linkedin"></i>
-						</a>
-				  <li>
-					<a href="pages/about.html">about</a>
-				  </li>
-				  <li>
-					<a href="pages/blog.html">blog</a>
-				  </li>
-				</ul>
-			</div>
-		</div>
-		</div>
-
-		<!-- left side bar -->
-    <!-- <div class="container">
-      <div class="row">
-        <div class="column">
-          <h1>SIDE NAV</h1>
-          <br />
-          <div class="column">
-          </div>
-        </div>
-      </div>
-    </div> -->
-
-		<!-- main container -->
-		<div class="container introduction h5">
-			<div class="row intro">
-				<div class="column u-full-width">
-					<h1 id="hello" contenteditable> Hi there.</h1>
-					<p>Welcome to my portfolio. Who am i?</p>
-				</div>
-				<div class="name-introduction">
-					<img
-						src="./images/Miler.jpg"
-						alt="portrait of myself" />
-					<h1>I'm Cigomba</h1>
-					<p>Computer Science Student at Arizona State University.</p>
-					<div class="about-me">
-						<h3>Bio</h3>
-						<p>
-						I've been going at this Computer Science thing for a while now, and I'm almost done! Or maybe I'm just getting started! Hahaha. Anyway, I love it a lot, and I love coding, designing, and creating new software, products, and things for people to use. 
-						</p>
-						<p>
-							I grew in Phoenix, AZ, where it's nice and sunny most of the year. And the views and beautiful desert scenery is amazing.
-						</p>
-						<p>The thing I'd like to accomplish professionally is be part of a nice big impactful company or organization or group of people that does something to help advance the cause of humanity. Vague, I know, but that's what it is.</p>
-						<a class="contact" href="#modal">Contact Me</a>
-					</div>
+			<div class="name-introduction">
+				<img src="./images/Miler.jpg" alt="portrait of myself" />
+				<h1>I'm Cigomba</h1>
+				<p>Computer Science Student at Arizona State University.</p>
+				<div class="about-me">
+					<h3>Bio</h3>
+					<p>
+						I've been going at this Computer Science thing for a while now, and I'm almost done! Or maybe I'm just getting started! Hahaha.
+						Anyway, I love it a lot, and I love coding, designing, and creating new software, products, and things for people to
+						use.
+					</p>
+					<p>
+						I grew in Phoenix, AZ, where it's nice and sunny most of the year. And the views and beautiful desert scenery is amazing.
+					</p>
+					<p>The thing I'd like to accomplish professionally is be part of a nice big impactful company or organization or group
+						of people that does something to help advance the cause of humanity. Vague, I know, but that's what it is.</p>
+					<a class="contact button" id="contactme">Contact Me</a>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<!-- Knowables -->
-		<div class="section knowables">
-			<div class="container" id="languages">
-				<h6>Programming Languages / Tools</h6>
-				<h3>Some of the tools I currently have in my arsenal.</h3>
-				<ul>
-					<li>					
-						<i class="fa-brands fa-html5" aria-hidden="true"></i>
-						html</li>
-					<li>
-						<i class="fa-brands fa-css3" aria-hidden="true"></i>
-						css</li>
-					<li>
-						<i class="fa-brands fa-js" aria-hidden="true"></i>
-						some javascript</li>
-					<li>some c++</li>
-					<li>basic programming language knowledge a.k.a. OOP</li>
-				</ul>
-				<div id="_icons">
-					<i class="fa-brands fa-html5 fa-3x"></i>
+	<!-- Knowables -->
+	<div class="section knowables">
+		<div class="container" id="languages">
+			<h6>Programming Languages / Tools</h6>
+			<h3>Some of the skills I currently possess.</h3>
+			<div class="listed_languages">
+				<div class="listed_icons_text">
+					<i class="fa-brands fa-html5 fa-3x" aria-hidden="true"></i>
+					html
+				</div class="listed_icons_text">
+				<div class="listed_icons_text">
 					<i class="fa-brands fa-css3 fa-3x" aria-hidden="true"></i>
-					<i class="fa-brands fa-js fa-3x"></i>
-				</div>
-			</div>
-			<br />
-			<div class="container" id="projects">
-				<h3>Projects & Experience</h3>
-				<div class="row">
-					<div class="one-half column">
-					  <p>I've posted some of my projects coding on display on my github repositories </p>
-						<button>My github. 						<i class="fa-brands fa-github"></i>
-						</button>
-					</div>
-				</div>
-			</div>
-
-			<br />
-			<div class="container" id="accomplishments">
-				<h3>Certificates and Accomplishments</h3>
-				<div class="row">
-					<div class="row">
-						<h6 class="minimize_margin">Coursera</h6>
-						<div class="row h5 centery">
-							<img
-							src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~2NCJ9L68QQPT/CERTIFICATE_LANDING_PAGE~2NCJ9L68QQPT.jpeg"
-								alt="Coursera Certificate"
-								class="certificate-image" />
-							<div class="one-half column text-content">
-								<p>I really enjoyed the time I spent earning this certificate. It was tough, but it taught me a few things I didn't know about about IT and linux.</p>
-								<a
-									href="https://coursera.org/share/db2e417fae00157fb17fb504d6caa990"
-									class="button">View Certificate </a>
-							</div>
-						</div>
-					</div>
-					<div class="row h5">
-						<h6 class="minimize_margin">FreeCodeCamp</h6>
-						<div class="row h5 centery">
-							<img
-							src="#"
-								class="certificate-image" />
-							<div class="one-half column text-content">
-								<p> I hope to add lots of freecodecamp certificates in the near future.</p>
-								<a
-									href="#"
-									class="button">View Certificates</a>
-							</div>
-						</div>
-					</div>
-					<div class="row h5">
-						<h6 class="minimize_margin">MongoDB</h6>
-						<div class="row h5 centery">
-							<img
-							src="#"
-								class="certificate-image" />
-							<div class="one-half column text-content">
-								<p> I hope to add lots of at least one MongoDB certificates showing I've learned more about it this year, because I currently think it interesting..</p>
-								<a
-									href="#"
-									class="button">View Certificate</a>
-							</div>
-						</div>
-					</div>
-				</div>
-
+					css
+				</div class="listed_icons_text">
+				<div class="listed_icons_text">
+					<i class="fa-brands fa-js fa-3x" aria-hidden="true"></i>
+					javascript
+				</div class="listed_icons_text">
+				<div class="listed_icons_text">
+					<i class="fa-brands fa-react fa-3x"></i> A bit of react
+				</div class="listed_icons_text">
+				<div class="listed_icons_text">
+					<i class="fa-brands fa-bootstrap fa-3x"></i> some Bootstrap
+				</div class="listed_icons_text">
+				<div class="listed_icons_text">
+					<i class="fa-brands fa-sass fa-3x"></i> SASS
+				</div class="listed_icons_text">
+				<div class="listed_icons_text">
+					jQuery
+				</div class="listed_icons_text">
 			</div>
 		</div>
 
-
-		<!-- Contact Modal -->
-		<div class="section modal" id="modal">
-			<div class="container modal-content">
-				<h4>
-					<a>Cigomba.tech</a>
-				</h4>
-				<h2>
-					<b> Reach out to me </b>
-				</h2>
-				<p>I love using software and hardware to develop new ideas. Please contact me for job or work opportunities as well as collaborations. You can also ask me for my resume. Thank you.</p>
-				<form
-					class="u-full-width"
-					action="post">
-					<label htmlFor="name">Your Name</label>
-					<input 
-						type="text" 
-						id="name" 
-						class="u-full-width">
-					<label htmlFor="email">Your email</label>
-					<input
-						type="email"
-						id="email"
-						class="u-full-width"
-						placeholder="example@mailbox.com" />
-					<label htmlFor="message">Message</label>
-					<textarea
-						name=""
-						id="message"
-						placeholder="Your message here..."></textarea>
-						<div class="submit_container">
-
-							<button
-							type="button" id="submit_btn"
-							onClick="submitForm()">
-							Submit
-						</button>
-					</div>
-				</form>
+		<div class="container" id="projects">
+			<h6>Projects & Experience</h6>
+			<h3>I've posted some of my projects coding on display on my github repositories</h3>
+			<div class="row">
+				<div class="one-half column">
+					<p> </p>
+					<a class="styled_btn button button-primary" href="https://github.com/Cigomba" target="_blank">My github.
+						<i class="fa-brands fa-github"></i>
+					</a>
+				</div>
 			</div>
 		</div>
-	</body>
+
+		<div class="container" id="accomplishments">
+			<h6>Certification</h6>
+			<h3>Certificates and Accomplishments</h3>
+			<div class="certificates_container">
+				<div class="certificate_container">
+					<div class="img_div">
+						<img src="https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~2NCJ9L68QQPT/CERTIFICATE_LANDING_PAGE~2NCJ9L68QQPT.jpeg"
+						 alt="Coursera Certificate" class="certificate-image" />
+						<h6 class=" ">Coursera's Google IT Support Professional Certificate</h6>
+					</div>
+					<div class="text-content">
+						<p>I really enjoyed the time I spent earning this certificate. It was tough, but it taught me a few things I didn't know
+							about about IT and linux.</p>
+						<a href="https://coursera.org/share/db2e417fae00157fb17fb504d6caa990" target="_blank" class="styled_btn button button-primary">View Certificate </a>
+					</div>
+				</div>
+				<div class="certificate_container">
+					<div>
+						<img src="./images/front_end_webdesign_certificate.png" class="certificate-image" />
+						<h6 class="">Responsive Web Design Certification - FreeCodeCamp</h6>
+					</div>
+					<div class="text-content">
+						<p>This was the first Free Code Camp Certification I earned!</p>
+						<a href="https://www.freecodecamp.org/certification/milah/responsive-web-design" target="_blank" class="styled_btn button button-primary">View Certificates</a>
+					</div>
+				</div>
+				<div class="certificate_container">
+					<div class=" ">
+						<img src="./images/front_end_certificate.png" class="certificate-image" />
+						<h6 class="">Front End Development Libraries Certification - FreeCodeCamp</h6>
+					</div>
+					<div class="text-content">
+						<p>This was a fun one. I'm surprised at how quickly I was able to go through the basics of jQuery, React, along with an
+							introduction to Redux as well as SASS and Bootstrap! </p>
+						<a href="https://www.freecodecamp.org/certification/milah/front-end-development-libraries" target="_blank" class="styled_btn button button-primary">View Certificates</a>
+					</div>
+				</div>
+				<!-- <div class="certificate_container ">
+					<div class=" ">
+						<h6 class=" ">MongoDB</h6>
+						<img src="# " class="certificate-image " />
+					</div>
+					<div class="text-content ">
+						<p> I hope to add lots of at least one MongoDB certificates showing I've learned more about it this year, because I currently
+							think it interesting..</p>
+						<a href="# " class="button ">View Certificate</a>
+					</div>
+				</div> -->
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- Contact Modal -->
+	<div class="section modal" id="modal">
+		<div class="container modal-content">
+			<h2>
+				<b> Reach out to me </b>
+			</h2>
+			<p>I love using software and hardware to develop new ideas. Please contact me for job or work opportunities as well as collaborations.
+				You can also ask me for my resume. Thank you.</p>
+			<form class="u-full-width" action="post">
+				<label htmlFor="name">Your Name</label>
+				<input type="text" id="name" class="u-full-width">
+				<label htmlFor="email">Your email</label>
+				<input type="email" id="email" class="u-full-width" placeholder="example@mailbox.com" />
+				<label htmlFor="message">Message</label>
+				<textarea name="messsage" id="message" placeholder="Your message here..."></textarea>
+				<div class="submit_container ">
+					<button type="button" id="submit_btn" onClick="submitForm()">
+						Submit
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+
 </html>
