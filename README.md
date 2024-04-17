@@ -1,3 +1,3 @@
-# portfolio
+# My Portfolio
 
-Source code for my portfolio website
+Thanks for visiting my repository. You can find the live site [here](https://cigomba.github.io/portfolio/)
