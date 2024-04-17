@@ -14,8 +14,49 @@ body {
 /* navbar css */
 
 #main_nav {
-
+    background-color: var(--bg_brown);
+    /* color: white; */
+    padding: 10px;
 }   
+
+#inner_main_nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#inner_main_nav a:hover {
+    color: rgb(255, 166, 0);
+    text-decoration: underline;
+}
+
+#inner_main_nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+#inner_main_nav.container::after {
+    content: inherit;
+}
+
+#social_nav {
+    display: flex;
+    gap: 30px;
+    
+}
+
+#back_to_top {
+    display: none;
+    /* position: sticky; */
+}
+
+.sticky {
+    position: fixed;
+    position: -webkit-sticky;
+    right: 10px;
+    /* top: calc(100% - 7%); */
+    top: 98%;
+    
+}
 
 #hello {
     white-space: nowrap;
@@ -74,8 +115,10 @@ body {
     text-align: center;
 }
 
-.introduction {
-    padding-bottom: 100px !important;
+#introduction {
+    padding-bottom: 100px;
+    padding-top: 50px;
+
 }
 
 .about-me {
@@ -182,8 +225,9 @@ body {
     box-sizing: border-box;
 }
 
-.modal-content {
-    padding-top: 100px !important;
+#modal-content {
+    padding-top: 100px;
+    width: 75%;
 }
 
 input {
@@ -210,6 +254,7 @@ input {
 /* Blog Page CSS */
 #background {
     position: relative;
+    margin-top: 50px;
 }
 #aside {
     position: absolute;

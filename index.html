@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+	
+	<head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="style.css" />
@@ -18,19 +18,30 @@
 			emailjs.init("MzSIdgg5HdqE-3xBi");
 		})();
 	</script>
-
-	<title>Miler's Portfolio</title>
+<title>Miler's Portfolio</title>
 </head>
 
 <body>
+	<!-- back to top button  -->
+	<button id="back_to_top" class="button-primary styled_btn">Back to Top</button>
+	
 	<!-- top navigation -->
-	<nav class="container" id="main_nav">
-		<a href="/">Home</a>
-		<a href="pages/about.html">about</a>
-	</nav>
+	<nav class="u-full-width" id="main_nav">
+		<div class="container" id="inner_main_nav">
+			<div id="nav_links">
+				<a href="/">Home</a>
+				<a href="pages/about.html">about</a>
+			</div>
+			<div class="" id="social_nav">
+				<a href="https://github.com/Cigomba"><i class="fa-brands fa-github fa"></i></a>
+				<a href="https://linkedin.com/in/cigomba-miler"><i class="fa-brands fa-linkedin-in"></i></a>
+				<!-- <a><i class="fa fa-github fa-x"></i></a> -->
+			</div>	
+		</div>
+		</nav>
 
 	<!-- main container -->
-	<div class="container introduction">
+	<div class="container" id="introduction">
 		<div class="row intro">
 			<div class="column u-full-width">
 				<h1 id="hello" contenteditable> Hi there! Welcome to my portfolio.</h1>
@@ -103,7 +114,7 @@
 				</div>
 			</div>
 		</div>
-
+		
 		<div class="container" id="accomplishments">
 			<h6>Certification</h6>
 			<h3>Certificates and Accomplishments</h3>
@@ -138,7 +149,7 @@
 					<div class="text-content">
 						<p>This was a fun one. I'm surprised at how quickly I was able to go through the basics of jQuery, React, along with an
 							introduction to Redux as well as SASS and Bootstrap! </p>
-						<a href="https://www.freecodecamp.org/certification/milah/front-end-development-libraries" target="_blank" class="styled_btn button button-primary">View Certificates</a>
+							<a href="https://www.freecodecamp.org/certification/milah/front-end-development-libraries" target="_blank" class="styled_btn button button-primary">View Certificates</a>
 					</div>
 				</div>
 				<div class="certificate_container ">
@@ -156,16 +167,16 @@
 		</div>
 	</div>
 
-
+	
 	<!-- Contact Modal -->
 	<div class="section modal" id="modal">
-		<div class="container modal-content">
+		<div class="container" id="modal-content">
 			<h2>
 				<b> Reach out to me </b>
 			</h2>
 			<p>I love using software and hardware to develop new ideas. Please contact me for job or work opportunities as well as collaborations.
 				You can also ask me for my resume. Thank you.</p>
-			<form class="u-full-width" action="post">
+				<form class="u-full-width" action="post">
 				<label htmlFor="name">Your Name</label>
 				<input type="text" id="name" class="u-full-width">
 				<label htmlFor="email">Your email</label>
@@ -180,6 +191,7 @@
 			</form>
 		</div>
 	</div>
+	<script src="./node_modules/animejs/lib/anime.min.js"></script>
 </body>
 
 </html>
